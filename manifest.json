@@ -1,0 +1,15 @@
+{
+  "name": "State Life Insurance Corporation — Gujranwala Branch",
+  "short_name": "State Life Gujranwala",
+  "description": "State Life Insurance Corporation of Pakistan, Gujranwala Branch. Life, Health, Takaful, Group & Pension plans. Shaheenabad, Gujranwala.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#050912",
+  "theme_color": "#070B18",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

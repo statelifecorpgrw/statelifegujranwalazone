@@ -204,8 +204,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .header-phone{display:flex;align-items:center;gap:8px;font-size:.88rem;font-weight:600;color:var(--silver-300);}
 .header-phone svg{width:16px;height:16px;color:var(--gold-400);}
 
-.nav-toggle{display:none;flex-direction:column;gap:5px;width:30px;height:22px;justify-content:center;}
-.nav-toggle span{display:block;width:100%;height:2px;background:var(--white);border-radius:2px;transition:transform .3s var(--ease-out),opacity .3s;}
+.nav-toggle{display:none;flex-direction:column;align-items:center;gap:5px;width:30px;height:22px;justify-content:center;}
+.nav-toggle span{display:block;width:26px;height:2px;background:var(--white);border-radius:2px;transition:transform .3s var(--ease-out),opacity .3s;}
 .nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
 .nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0;}
 .nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
@@ -442,7 +442,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .main-nav a{font-size:1.2rem;}
   .nav-toggle{display:flex;}
   .header-phone span{display:none;}
+  .header-phone{padding:10px;margin:-10px;}
   .site-header__actions .btn--sm{display:none;}
+  .nav-toggle{padding:10px;margin:-10px;width:50px;height:42px;}
 
   .about__grid,.office__grid,.careers__grid,.contact__grid{grid-template-columns:1fr;}
   .office__map{aspect-ratio:16/10;}

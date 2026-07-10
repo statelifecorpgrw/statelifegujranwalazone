@@ -335,7 +335,8 @@
 
     var renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
     renderer.setClearColor(0x000000, 0);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    var isSmallScreen = window.innerWidth < 700;
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, isSmallScreen ? 1.5 : 2));
     renderer.setSize(width, height);
 
     var scene = new THREE.Scene();
@@ -365,7 +366,7 @@
 
     var geometry = new THREE.ExtrudeGeometry(shape, {
       depth: 0.5, bevelEnabled: true, bevelThickness: 0.09, bevelSize: 0.09,
-      bevelSegments: 4, curveSegments: 24
+      bevelSegments: isSmallScreen ? 2 : 4, curveSegments: isSmallScreen ? 14 : 24
     });
     geometry.center();
 
