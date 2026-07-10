@@ -203,6 +203,14 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .site-header__actions{display:flex;align-items:center;gap:16px;}
 .header-phone{display:flex;align-items:center;gap:8px;font-size:.88rem;font-weight:600;color:var(--silver-300);}
 .header-phone svg{width:16px;height:16px;color:var(--gold-400);}
+.header-social{display:flex;gap:8px;}
+.header-social a{
+  display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);transition:background .3s,border-color .3s,transform .3s var(--ease-out);
+}
+.header-social svg{width:16px;height:16px;color:var(--silver-300);transition:color .3s;}
+.header-social a:hover{background:var(--gold-500);border-color:var(--gold-500);transform:translateY(-2px);}
+.header-social a:hover svg{color:var(--navy-950);}
 
 .nav-toggle{display:none;flex-direction:column;align-items:center;gap:5px;width:30px;height:22px;justify-content:center;}
 .nav-toggle span{display:block;width:26px;height:2px;background:var(--white);border-radius:2px;transition:transform .3s var(--ease-out),opacity .3s;}
@@ -383,6 +391,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .contact__phone-cta{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-display);font-size:1.6rem;color:var(--gold-400);margin-bottom:18px;}
 .contact__phone-cta svg{width:22px;height:22px;}
 .contact__address{display:flex;align-items:center;gap:10px;color:var(--silver-300);font-size:.95rem;}
+.contact__follow{margin-top:30px;}
+.contact__follow-label{display:block;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-400);margin-bottom:12px;}
+.contact__follow-buttons{display:flex;gap:12px;flex-wrap:wrap;}
+.contact__follow-buttons svg{width:17px;height:17px;}
 .contact__address svg{width:16px;height:16px;color:var(--gold-500);}
 
 .contact__form{padding:36px;display:flex;flex-direction:column;gap:18px;}
@@ -443,6 +455,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .nav-toggle{display:flex;}
   .header-phone span{display:none;}
   .header-phone{padding:10px;margin:-10px;}
+  .header-social{display:none;}
   .site-header__actions .btn--sm{display:none;}
   .nav-toggle{padding:10px;margin:-10px;width:50px;height:42px;}
 
